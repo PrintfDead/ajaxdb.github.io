@@ -370,21 +370,23 @@
 <script>
     const developing = document.getElementById("developing");
     const close = document.getElementById("close");
+    let scroll = 0;
 
     developing.addEventListener("click", (event) =>
     {
         document.getElementById("alert").classList.remove("fix-alert");
+        scroll = window.scrollY;
         $([document.documentElement, document.body]).animate({
             scrollTop: $("#alert").offset().top
-        }, 1000);
+        }, 800);
     });
 
     close.addEventListener("click", (event) =>
     {
         document.getElementById("alert").classList.add("fix-alert");
         $([document.documentElement, document.body]).animate({
-            scrollTop: $("#repos").offset().top
-        }, 1000);
+            scrollTop: scroll == 0 ? $("#repos").offset().top : scroll
+        }, 800);
     });
 
 </script>
