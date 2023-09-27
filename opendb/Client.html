@@ -89,11 +89,11 @@
   </svg>
 </head>
 
-<body class="dark" data-theme="dark">
+<body data-theme="dark">
   <div class="sidebar-container">
     <div class="sidebar" id="sidebar"><a href="/" class="sidebar-title sidebar-title-anchor">Home</a>
       <div class="sidebar-items-container">
-        <div class="sidebar-section-title with-arrow" data-isopen="false" id="wMnWSTTsA7F_o6kyJBa1g">
+        <div class="sidebar-section-title with-arrow" data-isopen="false" id="PWMyTG-pHaB4S1lZs4ZEv">
           <div>Classes</div><svg>
             <use xlink:href="#down-icon"></use>
           </svg>
@@ -102,7 +102,7 @@
           <div class="sidebar-section-children"><a href="Client.html">Client</a></div>
           <div class="sidebar-section-children"><a href="NodeEmitter.html">NodeEmitter</a></div>
         </div>
-        <div class="sidebar-section-title with-arrow" data-isopen="false" id="xZu-t1YV5-_WztrtgUHak">
+        <div class="sidebar-section-title with-arrow" data-isopen="false" id="DI7cuYolnzxsb8nIlwznb">
           <div>Global</div><svg>
             <use xlink:href="#down-icon"></use>
           </svg>
@@ -113,6 +113,7 @@
           <div class="sidebar-section-children"><a href="global.html#DecryptedOptions">DecryptedOptions</a></div>
           <div class="sidebar-section-children"><a href="global.html#Encrypt">Encrypt</a></div>
           <div class="sidebar-section-children"><a href="global.html#EncryptsTypes">EncryptsTypes</a></div>
+          <div class="sidebar-section-children"><a href="global.html#PredicateType">PredicateType.&lt;T></a></div>
           <div class="sidebar-section-children"><a href="global.html#TypeResolvable">TypeResolvable</a></div>
         </div>
       </div>
@@ -177,7 +178,7 @@
                   <dt class="tag-source bold">Source</dt>
                   <dd class="tag-source">
                     <ul>
-                      <li><a href="Client.js.html">Client.js</a>, <a href="Client.js.html#line34">line 34</a></li>
+                      <li><a href="Client.js.html">Client.js</a>, <a href="Client.js.html#line40">line 40</a></li>
                     </ul>
                   </dd>
                 </div>
@@ -229,7 +230,7 @@
                 <dt class="tag-source bold">Source</dt>
                 <dd class="tag-source">
                   <ul>
-                    <li><a href="Client.js.html">Client.js</a>, <a href="Client.js.html#line387">line 387</a></li>
+                    <li><a href="Client.js.html">Client.js</a>, <a href="Client.js.html#line380">line 380</a></li>
                   </ul>
                 </dd>
               </div>
@@ -271,7 +272,7 @@
                 <dt class="tag-source bold">Source</dt>
                 <dd class="tag-source">
                   <ul>
-                    <li><a href="Client.js.html">Client.js</a>, <a href="Client.js.html#line88">line 88</a></li>
+                    <li><a href="Client.js.html">Client.js</a>, <a href="Client.js.html#line97">line 97</a></li>
                   </ul>
                 </dd>
               </div>
@@ -314,7 +315,7 @@
                 <dt class="tag-source bold">Source</dt>
                 <dd class="tag-source">
                   <ul>
-                    <li><a href="Client.js.html">Client.js</a>, <a href="Client.js.html#line190">line 190</a></li>
+                    <li><a href="Client.js.html">Client.js</a>, <a href="Client.js.html#line193">line 193</a></li>
                   </ul>
                 </dd>
               </div>
@@ -390,7 +391,7 @@
                 <dt class="tag-source bold">Source</dt>
                 <dd class="tag-source">
                   <ul>
-                    <li><a href="Client.js.html">Client.js</a>, <a href="Client.js.html#line842">line 842</a></li>
+                    <li><a href="Client.js.html">Client.js</a>, <a href="Client.js.html#line883">line 883</a></li>
                   </ul>
                 </dd>
               </div>
@@ -456,7 +457,7 @@
                 <dt class="tag-source bold">Source</dt>
                 <dd class="tag-source">
                   <ul>
-                    <li><a href="Client.js.html">Client.js</a>, <a href="Client.js.html#line688">line 688</a></li>
+                    <li><a href="Client.js.html">Client.js</a>, <a href="Client.js.html#line729">line 729</a></li>
                   </ul>
                 </dd>
               </div>
@@ -532,7 +533,7 @@
                 <dt class="tag-source bold">Source</dt>
                 <dd class="tag-source">
                   <ul>
-                    <li><a href="Client.js.html">Client.js</a>, <a href="Client.js.html#line757">line 757</a></li>
+                    <li><a href="Client.js.html">Client.js</a>, <a href="Client.js.html#line798">line 798</a></li>
                   </ul>
                 </dd>
               </div>
@@ -627,7 +628,7 @@
                 <dt class="tag-source bold">Source</dt>
                 <dd class="tag-source">
                   <ul>
-                    <li><a href="Client.js.html">Client.js</a>, <a href="Client.js.html#line442">line 442</a></li>
+                    <li><a href="Client.js.html">Client.js</a>, <a href="Client.js.html#line435">line 435</a></li>
                   </ul>
                 </dd>
               </div>
@@ -638,10 +639,74 @@
                 <dd><span class="param-type">Promise.&lt;void></span></dd>
               </dl>
             </div>
+            <h3 class="name has-anchor" id="Filter"><span class="type-signature"></span>Filter<span
+                class="signature">(Reference, predicate, Container<span
+                  class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr;
+                {Array.&lt;ContainerTable>|undefined}</span></h3>
+            <div class="method-member-container flex flex-col w-100 overflow-auto mt-20"><strong>Parameters:</strong>
+              <table class="params">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Attributes</th>
+                    <th>Default</th>
+                    <th class="last">Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="name"><code>Reference</code></td>
+                    <td class="type"><span class="param-type">string</span> |<wbr> <span
+                        class="param-type">number</span></td>
+                    <td class="attributes"></td>
+                    <td class="default"></td>
+                    <td class="description last">
+                      <p>Reference to find the pointer easier</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="name"><code>predicate</code></td>
+                    <td class="type"><span class="param-type">PredicateType.&lt;T></span></td>
+                    <td class="attributes"></td>
+                    <td class="default"></td>
+                    <td class="description last">
+                      <p>Predicate to filter data</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="name"><code>Container</code></td>
+                    <td class="type"><span class="param-type">string</span></td>
+                    <td class="attributes">&lt;optional><br></td>
+                    <td class="default">false</td>
+                    <td class="description last">
+                      <p>Container ID</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <dl class="details">
+              <div class="details-item-container">
+                <dt class="tag-source bold">Source</dt>
+                <dd class="tag-source">
+                  <ul>
+                    <li><a href="Client.js.html">Client.js</a>, <a href="Client.js.html#line580">line 580</a></li>
+                  </ul>
+                </dd>
+              </div>
+            </dl>
+            <div class="method-member-container mt-20"><strong>Returns:</strong>
+              <dl class="param-type">
+                <dt>Type:&nbsp;</dt>
+                <dd><span class="param-type">Array.&lt;ContainerTable></span> |<wbr> <span
+                    class="param-type">undefined</span></dd>
+              </dl>
+            </div>
             <h3 class="name has-anchor" id="Find"><span class="type-signature">(async) </span>Find<span
                 class="signature">(Reference, KeyName, KeyValue, Container<span
                   class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr;
-                {Promise.&lt;(ContainerTable|undefined)>}</span></h3>
+                {ContainerTable|undefined}</span></h3>
             <div class="description">
               <p>Search table by a key</p>
             </div>
@@ -703,7 +768,7 @@
                 <dt class="tag-source bold">Source</dt>
                 <dd class="tag-source">
                   <ul>
-                    <li><a href="Client.js.html">Client.js</a>, <a href="Client.js.html#line566">line 566</a></li>
+                    <li><a href="Client.js.html">Client.js</a>, <a href="Client.js.html#line607">line 607</a></li>
                   </ul>
                 </dd>
               </div>
@@ -711,12 +776,75 @@
             <div class="method-member-container mt-20"><strong>Returns:</strong>
               <dl class="param-type">
                 <dt>Type:&nbsp;</dt>
-                <dd><span class="param-type">Promise.&lt;(ContainerTable|undefined)></span></dd>
+                <dd><span class="param-type">ContainerTable</span> |<wbr> <span class="param-type">undefined</span></dd>
+              </dl>
+            </div>
+            <h3 class="name has-anchor" id="FindByPredicate"><span class="type-signature"></span>FindByPredicate<span
+                class="signature">(Reference, predicate, Container<span
+                  class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr;
+                {ContainerTable|undefined}</span></h3>
+            <div class="method-member-container flex flex-col w-100 overflow-auto mt-20"><strong>Parameters:</strong>
+              <table class="params">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Attributes</th>
+                    <th>Default</th>
+                    <th class="last">Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="name"><code>Reference</code></td>
+                    <td class="type"><span class="param-type">string</span> |<wbr> <span
+                        class="param-type">number</span></td>
+                    <td class="attributes"></td>
+                    <td class="default"></td>
+                    <td class="description last">
+                      <p>Reference to find the pointer easier</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="name"><code>predicate</code></td>
+                    <td class="type"><span class="param-type">PredicateType.&lt;T></span></td>
+                    <td class="attributes"></td>
+                    <td class="default"></td>
+                    <td class="description last">
+                      <p>Predicate to find data</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="name"><code>Container</code></td>
+                    <td class="type"><span class="param-type">string</span></td>
+                    <td class="attributes">&lt;optional><br></td>
+                    <td class="default">false</td>
+                    <td class="description last">
+                      <p>Container ID</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <dl class="details">
+              <div class="details-item-container">
+                <dt class="tag-source bold">Source</dt>
+                <dd class="tag-source">
+                  <ul>
+                    <li><a href="Client.js.html">Client.js</a>, <a href="Client.js.html#line556">line 556</a></li>
+                  </ul>
+                </dd>
+              </div>
+            </dl>
+            <div class="method-member-container mt-20"><strong>Returns:</strong>
+              <dl class="param-type">
+                <dt>Type:&nbsp;</dt>
+                <dd><span class="param-type">ContainerTable</span> |<wbr> <span class="param-type">undefined</span></dd>
               </dl>
             </div>
             <h3 class="name has-anchor" id="Get"><span class="type-signature">(async) </span>Get<span
                 class="signature">(Reference, Container<span class="signature-attributes">opt</span>)</span><span
-                class="type-signature"> &rarr; {Promise.&lt;(ContainerTable|undefined)>}</span></h3>
+                class="type-signature"> &rarr; {ContainerTable|undefined}</span></h3>
             <div class="description">
               <p>Get table by a table id</p>
             </div>
@@ -762,7 +890,7 @@
                 <dt class="tag-source bold">Source</dt>
                 <dd class="tag-source">
                   <ul>
-                    <li><a href="Client.js.html">Client.js</a>, <a href="Client.js.html#line635">line 635</a></li>
+                    <li><a href="Client.js.html">Client.js</a>, <a href="Client.js.html#line676">line 676</a></li>
                   </ul>
                 </dd>
               </div>
@@ -770,11 +898,13 @@
             <div class="method-member-container mt-20"><strong>Returns:</strong>
               <dl class="param-type">
                 <dt>Type:&nbsp;</dt>
-                <dd><span class="param-type">Promise.&lt;(ContainerTable|undefined)></span></dd>
+                <dd><span class="param-type">ContainerTable</span> |<wbr> <span class="param-type">undefined</span></dd>
               </dl>
             </div>
             <h3 class="name has-anchor" id="GetContainer"><span class="type-signature"></span>GetContainer<span
-                class="signature">(Container)</span><span class="type-signature"> &rarr; {BSON.Document}</span></h3>
+                class="signature">(Container, deserializeOptions=<span
+                  class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr;
+                {BSON.Document}</span></h3>
             <div class="description">
               <p>Get Container</p>
             </div>
@@ -784,6 +914,7 @@
                   <tr>
                     <th>Name</th>
                     <th>Type</th>
+                    <th>Attributes</th>
                     <th class="last">Description</th>
                   </tr>
                 </thead>
@@ -791,8 +922,17 @@
                   <tr>
                     <td class="name"><code>Container</code></td>
                     <td class="type"><span class="param-type">string</span></td>
+                    <td class="attributes"></td>
                     <td class="description last">
                       <p>Container ID</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="name"><code>deserializeOptions=</code></td>
+                    <td class="type"><span class="param-type">BSON.<wbr>DeserializeOptions</span></td>
+                    <td class="attributes">&lt;optional><br></td>
+                    <td class="description last">
+                      <p>Deserialize Options</p>
                     </td>
                   </tr>
                 </tbody>
@@ -803,7 +943,7 @@
                 <dt class="tag-source bold">Source</dt>
                 <dd class="tag-source">
                   <ul>
-                    <li><a href="Client.js.html">Client.js</a>, <a href="Client.js.html#line255">line 255</a></li>
+                    <li><a href="Client.js.html">Client.js</a>, <a href="Client.js.html#line259">line 259</a></li>
                   </ul>
                 </dd>
               </div>
@@ -845,7 +985,7 @@
                 <dt class="tag-source bold">Source</dt>
                 <dd class="tag-source">
                   <ul>
-                    <li><a href="Client.js.html">Client.js</a>, <a href="Client.js.html#line228">line 228</a></li>
+                    <li><a href="Client.js.html">Client.js</a>, <a href="Client.js.html#line231">line 231</a></li>
                   </ul>
                 </dd>
               </div>
@@ -921,7 +1061,7 @@
                 <dt class="tag-source bold">Source</dt>
                 <dd class="tag-source">
                   <ul>
-                    <li><a href="Client.js.html">Client.js</a>, <a href="Client.js.html#line284">line 284</a></li>
+                    <li><a href="Client.js.html">Client.js</a>, <a href="Client.js.html#line299">line 299</a></li>
                   </ul>
                 </dd>
               </div>
@@ -933,8 +1073,8 @@
               </dl>
             </div>
             <h3 class="name has-anchor" id="SetDatabase"><span class="type-signature"></span>SetDatabase<span
-                class="signature">(Name, Force<span class="signature-attributes">opt</span>, NotLoad<span
-                  class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {this}</span></h3>
+                class="signature">(Name, deserializeOptions=<span class="signature-attributes">opt</span>)</span><span
+                class="type-signature"> &rarr; {this}</span></h3>
             <div class="description">
               <p>Set database</p>
             </div>
@@ -945,7 +1085,6 @@
                     <th>Name</th>
                     <th>Type</th>
                     <th>Attributes</th>
-                    <th>Default</th>
                     <th class="last">Description</th>
                   </tr>
                 </thead>
@@ -954,27 +1093,16 @@
                     <td class="name"><code>Name</code></td>
                     <td class="type"><span class="param-type">string</span></td>
                     <td class="attributes"></td>
-                    <td class="default"></td>
                     <td class="description last">
                       <p>Database name</p>
                     </td>
                   </tr>
                   <tr>
-                    <td class="name"><code>Force</code></td>
-                    <td class="type"><span class="param-type">boolean</span></td>
+                    <td class="name"><code>deserializeOptions=</code></td>
+                    <td class="type"><span class="param-type">BSON.<wbr>DeserializeOptions</span></td>
                     <td class="attributes">&lt;optional><br></td>
-                    <td class="default">false</td>
                     <td class="description last">
-                      <p>Change force</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="name"><code>NotLoad</code></td>
-                    <td class="type"><span class="param-type">boolean</span></td>
-                    <td class="attributes">&lt;optional><br></td>
-                    <td class="default">false</td>
-                    <td class="description last">
-                      <p>Do not preload pointers and containers</p>
+                      <p>Deserialize Options</p>
                     </td>
                   </tr>
                 </tbody>
@@ -985,7 +1113,7 @@
                 <dt class="tag-source bold">Source</dt>
                 <dd class="tag-source">
                   <ul>
-                    <li><a href="Client.js.html">Client.js</a>, <a href="Client.js.html#line124">line 124</a></li>
+                    <li><a href="Client.js.html">Client.js</a>, <a href="Client.js.html#line132">line 132</a></li>
                   </ul>
                 </dd>
               </div>
@@ -1006,7 +1134,7 @@
                 <dt class="tag-source bold">Source</dt>
                 <dd class="tag-source">
                   <ul>
-                    <li><a href="Client.js.html">Client.js</a>, <a href="Client.js.html#line65">line 65</a></li>
+                    <li><a href="Client.js.html">Client.js</a>, <a href="Client.js.html#line74">line 74</a></li>
                   </ul>
                 </dd>
               </div>
@@ -1042,7 +1170,7 @@
     <div class="mobile-sidebar-wrapper"><a href="/" class="sidebar-title sidebar-title-anchor">Home</a>
       <div class="mobile-nav-links"></div>
       <div class="mobile-sidebar-items-c">
-        <div class="sidebar-section-title with-arrow" data-isopen="false" id="wMnWSTTsA7F_o6kyJBa1g">
+        <div class="sidebar-section-title with-arrow" data-isopen="false" id="PWMyTG-pHaB4S1lZs4ZEv">
           <div>Classes</div><svg>
             <use xlink:href="#down-icon"></use>
           </svg>
@@ -1051,7 +1179,7 @@
           <div class="sidebar-section-children"><a href="Client.html">Client</a></div>
           <div class="sidebar-section-children"><a href="NodeEmitter.html">NodeEmitter</a></div>
         </div>
-        <div class="sidebar-section-title with-arrow" data-isopen="false" id="xZu-t1YV5-_WztrtgUHak">
+        <div class="sidebar-section-title with-arrow" data-isopen="false" id="DI7cuYolnzxsb8nIlwznb">
           <div>Global</div><svg>
             <use xlink:href="#down-icon"></use>
           </svg>
@@ -1062,6 +1190,7 @@
           <div class="sidebar-section-children"><a href="global.html#DecryptedOptions">DecryptedOptions</a></div>
           <div class="sidebar-section-children"><a href="global.html#Encrypt">Encrypt</a></div>
           <div class="sidebar-section-children"><a href="global.html#EncryptsTypes">EncryptsTypes</a></div>
+          <div class="sidebar-section-children"><a href="global.html#PredicateType">PredicateType.&lt;T></a></div>
           <div class="sidebar-section-children"><a href="global.html#TypeResolvable">TypeResolvable</a></div>
         </div>
       </div>
