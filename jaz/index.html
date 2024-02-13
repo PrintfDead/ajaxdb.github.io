@@ -5,7 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>for my only love (jaz)</title>
     <link rel="icon" href="assets/love2.jpeg" type="image/jpeg">
-    <link rel="stylesheet" href="css/main.css">
+    <style>
+        /* Animacion de salida hacia la izquierda */
+        @keyframes animate-out {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* Animacion de entrada desde la derecha */
+        @keyframes animate-in {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+    </style>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100">
